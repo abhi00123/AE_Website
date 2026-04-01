@@ -29,16 +29,20 @@ export default function Services() {
       desc: "Don't just install tiles—create art. Our design consultancy helps you select patterns and colors that harmonize with your interior vision, including custom water-jet medallions.",
       img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDCoMpJpnqExmqxwGgbwyUmgcrpXDIh7sAFsUePm8WZzNp5kTNIlEzyDRmpbXCigmBl39J7eMUbUGaJrATKLGLFzHq_GFGHEnX3vDupICQgetjhNlYgfYkHHQ2AypOiwK2BIscYjtrPrfXKGx-5cdiPqtTakWAUNkTQTUmPygYffoTOhFyqaMX6neW1gnr6qQoCL6RYcFc9PcFLqHixLjmDzPm35JlesCsA3PeXRn5wwZMr01-QYrYpgOygclm2JOofshy_Fetyyts',
       extra: (
-        <div className="grid grid-cols-2 gap-4 mt-8 font-headline">
-          <div className="bg-surface-container-low p-4 rounded-lg">
-            <span className="material-symbols-outlined text-brand-gold mb-2" style={{ fontVariationSettings: "'FILL' 1" }}>architecture</span>
-            <h4 className="font-bold text-sm text-brand-navy">Bespoke Inlays</h4>
-            <p className="text-xs text-on-surface-variant mt-1 font-body">Custom CNC and water-jet cut patterns.</p>
+        <div className="grid grid-cols-2 gap-2 sm:gap-4 mt-8 font-headline w-full">
+          <div className="bg-surface-container-low p-3 sm:p-4 rounded-xl flex flex-col gap-2 sm:gap-3 h-full border border-black/5">
+            <span className="material-symbols-outlined text-brand-gold" style={{ fontSize: '20px', fontVariationSettings: "'FILL' 1" }}>architecture</span>
+            <div>
+              <h4 className="font-bold text-[11px] sm:text-sm text-brand-navy leading-tight mb-1">Bespoke Inlays</h4>
+              <p className="text-[10px] sm:text-[11px] text-on-surface-variant font-body leading-snug">Custom CNC and water-jet cut patterns.</p>
+            </div>
           </div>
-          <div className="bg-surface-container-low p-4 rounded-lg">
-            <span className="material-symbols-outlined text-brand-gold mb-2" style={{ fontVariationSettings: "'FILL' 1" }}>palette</span>
-            <h4 className="font-bold text-sm text-brand-navy">Color Consultation</h4>
-            <p className="text-xs text-on-surface-variant mt-1 font-body">Palette matching with lighting conditions.</p>
+          <div className="bg-surface-container-low p-3 sm:p-4 rounded-xl flex flex-col gap-2 sm:gap-3 h-full border border-black/5">
+            <span className="material-symbols-outlined text-brand-gold" style={{ fontSize: '20px', fontVariationSettings: "'FILL' 1" }}>palette</span>
+            <div>
+              <h4 className="font-bold text-[11px] sm:text-sm text-brand-navy leading-tight mb-1">Color Expert</h4>
+              <p className="text-[10px] sm:text-[11px] text-on-surface-variant font-body leading-snug">Professional palette matching services.</p>
+            </div>
           </div>
         </div>
       )
@@ -57,7 +61,7 @@ export default function Services() {
           />
           <div className="absolute inset-0 bg-brand-navy/60"></div>
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-8 w-full text-white">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 w-full text-white">
           <div className="max-w-2xl">
             <span className="font-label font-medium uppercase tracking-[0.2em] text-sm text-brand-gold mb-4 block text-left">WHAT WE DO</span>
             <h1 className="font-headline font-extrabold text-5xl md:text-7xl leading-tight tracking-tighter mb-6 text-left">
@@ -78,34 +82,60 @@ export default function Services() {
         </div>
       </section>
 
-      {/* 2. Services List - FIXED md:flex-row for all as per source */}
+      {/* 2. Services List - Guaranteed Layout Stacking */}
       <section className="py-24 space-y-32 bg-surface">
         {serviceItems.map((service, i) => (
-          <div key={i} className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row items-center gap-16 service-row">
-            <div className="w-full md:w-1/2 relative group">
-              <div className="absolute -top-10 -left-10 text-[12rem] font-headline font-extrabold text-brand-navy/5 select-none">{service.num}</div>
-              <div className="bg-surface-container-low p-2 shadow-2xl">
-                <img 
-                  className="w-full aspect-[4/5] object-cover grayscale hover:grayscale-0 transition-all duration-700" 
-                  src={service.img} 
-                  alt={service.title}
-                />
+          <div key={i} className="max-w-7xl mx-auto px-4 md:px-8 xl:flex xl:items-start xl:gap-20 service-row">
+            {/* Image on TOP on mobile, Side on Desktop */}
+            <div className="w-full xl:w-1/2 mb-12 xl:mb-0">
+              <div className="relative group">
+                <div className="absolute -top-8 -left-4 md:-top-12 md:-left-6 text-8xl md:text-[12rem] font-headline font-extrabold text-brand-navy/5 select-none pointer-events-none">{service.num}</div>
+                <div className="bg-surface-container-low p-2 shadow-2xl overflow-hidden">
+                  <img 
+                    className="w-full aspect-[16/10] xl:aspect-[4/5] object-cover grayscale hover:grayscale-0 transition-all duration-700" 
+                    src={service.img} 
+                    alt={service.title}
+                  />
+                </div>
               </div>
             </div>
-            <div className="w-full md:w-1/2 md:pl-12">
-              <h2 className="font-headline font-bold text-4xl text-brand-navy mb-6 tracking-tight">{service.title}</h2>
-              <p className="text-on-surface-variant text-lg leading-relaxed mb-8 font-body">{service.desc}</p>
+
+            {/* Content BELOW image on mobile, Side on Desktop */}
+            <div className="w-full xl:w-1/2">
+              <h2 className="font-headline font-bold text-3xl md:text-6xl text-brand-navy mb-6 md:mb-10 tracking-tight uppercase leading-[0.9]">{service.title}</h2>
+              <p className="text-on-surface-variant text-base md:text-xl leading-relaxed mb-10 md:mb-16 font-body w-full">{service.desc}</p>
               
               {service.features ? (
-                <ul className="space-y-4">
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 w-full">
                   {service.features.map(f => (
-                    <li key={f} className="flex items-center gap-3">
-                      <span className="material-symbols-outlined text-brand-gold" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
-                      <span className="font-label text-sm font-medium uppercase tracking-wide">{f}</span>
+                    <li key={f} className="flex items-center gap-4 bg-white p-5 border border-black/5 shadow-sm">
+                      <span className="material-symbols-outlined text-brand-gold shrink-0 text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
+                      <span className="font-label text-xs sm:text-sm font-bold uppercase tracking-[0.1em] text-brand-navy/80">{f}</span>
                     </li>
                   ))}
                 </ul>
-              ) : service.extra}
+              ) : (
+                <div className="grid grid-cols-2 gap-3 md:gap-8 mt-4 font-headline w-full">
+                  <div className="bg-white p-5 md:p-10 flex flex-col gap-6 shadow-sm border border-black/5 hover:shadow-xl transition-all h-full min-h-[200px]">
+                    <div className="w-14 h-14 bg-brand-gold/10 flex items-center justify-center shrink-0">
+                      <span className="material-symbols-outlined text-brand-gold text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>architecture</span>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg md:text-2xl text-brand-navy leading-tight mb-3">Bespoke Inlays</h4>
+                      <p className="text-xs md:text-base text-on-surface-variant font-body leading-relaxed">Custom CNC and water-jet cut patterns for unique, breathtaking flooring designs.</p>
+                    </div>
+                  </div>
+                  <div className="bg-white p-5 md:p-10 flex flex-col gap-6 shadow-sm border border-black/5 hover:shadow-xl transition-all h-full min-h-[200px]">
+                    <div className="w-14 h-14 bg-brand-gold/10 flex items-center justify-center shrink-0">
+                      <span className="material-symbols-outlined text-brand-gold text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>palette</span>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg md:text-2xl text-brand-navy leading-tight mb-3">Color Expert</h4>
+                      <p className="text-xs md:text-base text-on-surface-variant font-body leading-relaxed">Professional palette matching and color strategy tailored perfectly to your space.</p>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         ))}
@@ -113,7 +143,7 @@ export default function Services() {
 
       {/* 3. Service Areas - FIXED font size and hover */}
       <section className="bg-surface-container-low py-24">
-        <div className="max-w-7xl mx-auto px-8 text-center">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 text-center">
           <span className="font-label font-medium uppercase tracking-[0.2em] text-sm text-brand-gold mb-4 block">WHERE WE WORK</span>
           <h2 className="font-headline font-extrabold text-4xl text-brand-navy tracking-tight mb-16">Serving All of Pune & Nearby</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">

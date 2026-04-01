@@ -57,7 +57,7 @@ export default function Gallery() {
           ? 'bg-brand-navy border-b border-white/10' 
           : 'bg-white border-b border-surface-container-high'
         }`}>
-          <div className="max-w-7xl mx-auto px-8 flex justify-center space-x-10">
+          <div className="max-w-7xl mx-auto px-4 md:px-8 flex md:justify-center justify-start space-x-8 md:space-x-10">
             {categories.map(cat => (
               <button
                 key={cat}
