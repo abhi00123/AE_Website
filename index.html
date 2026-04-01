@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhishek Enterprise | Premium Tile & Marble Contractors Pune</title>
+    <meta name="description" content="Expert tile and marble contractors in Pune. Residential & commercial tile fitting, marble polishing, granite work across Pune." />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <!-- Favicon Links -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" type="image/png" href="/favicon.png" />
+    <link rel="mask-icon" href="/favicon.svg" color="#0B1437" />
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <!-- Unified styling via src/index.css -->
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .material-symbols-outlined.fill {
+        font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        background: rgba(248, 247, 244, 0.85);
+        backdrop-filter: blur(20px);
+      }
+      .gold-hover-edge:hover { 
+        border-left: 4px solid #C9A84C; 
+      }
+      .staircase-active { 
+        border-left: 4px solid #C9A84C; 
+      }
+      .asymmetric-grid {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1.2fr;
+        gap: 1.5rem;
+      }
+      .hero-gradient { 
+        background: linear-gradient(to right, rgba(11, 20, 55, 0.9), rgba(11, 20, 55, 0.6)); 
+      }
+      .service-row:nth-child(even) { 
+        flex-direction: row-reverse; 
+      }
+      details summary::-webkit-details-marker {
+        display: none;
+      }
+      .pulse-ring {
+        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: .5; }
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </head>
+  <body class="bg-surface font-body text-on-surface antialiased selection:bg-brand-gold selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-surface font-body text-on-background selection:bg-brand-gold selection:text-white antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+}
+
+@layer components {
+  .masonry-grid {
+    column-count: 1;
+    column-gap: 2rem;
+  }
+  @media (min-width: 768px) { .masonry-grid { column-count: 2; } }
+  @media (min-width: 1024px) { .masonry-grid { column-count: 4; } }
+  
+  .masonry-item {
+    break-inside: avoid;
+    margin-bottom: 2rem;
+  }
+  
+  .gold-hover-edge {
+    @apply border-l-4 border-transparent hover:border-brand-gold transition-all duration-300 pl-3;
+  }
+}
