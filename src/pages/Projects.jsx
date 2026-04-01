@@ -176,8 +176,8 @@ export default function Projects() {
             <Link to="/contact" className="w-full md:w-auto bg-brand-gold text-brand-navy px-10 py-5 text-sm font-bold font-label uppercase tracking-widest rounded hover:scale-105 transition-transform duration-300 shadow-2xl">
               Get Free Estimate
             </Link>
-            <a href="tel:+919876543210" className="w-full md:w-auto border-2 border-white/20 text-white px-10 py-[18px] text-sm font-bold font-label uppercase tracking-widest rounded hover:bg-white hover:text-brand-navy transition-all duration-300">
-              Call Now: +91 98765 43210
+            <a href="tel:0000000000" className="w-full md:w-auto border-2 border-white/20 text-white px-10 py-[18px] text-sm font-bold font-label uppercase tracking-widest rounded hover:bg-white hover:text-brand-navy transition-all duration-300">
+              Call Now: 0000000000
             </a>
           </div>
         </div>

@@ -104,7 +104,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-headline font-bold text-brand-navy uppercase tracking-widest text-sm mb-1 text-on-surface">Direct Lines</h4>
-                    <p className="text-brand-gold font-headline font-bold text-lg">+91 98765 43210</p>
+                    <p className="text-brand-gold font-headline font-bold text-lg">0000000000</p>
                     <p className="text-on-surface-variant font-body text-sm">contact@abhishekenterprise.in</p>
                   </div>
                 </div>

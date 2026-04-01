@@ -134,7 +134,7 @@ export default function Navbar() {
           <div className="mt-8 bg-white" style={{ backgroundColor: '#ffffff' }}>
             <div className="grid grid-cols-2 gap-4 mb-4">
               <a 
-                href="tel:+919876543210" 
+                href="tel:0000000000" 
                 className="flex items-center justify-center gap-3 bg-white py-5 rounded-lg border border-black/[0.05] text-[#0B1437] font-headline font-bold text-[11px] uppercase tracking-widest shadow-sm hover:brightness-95 transition-all"
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -142,7 +142,7 @@ export default function Navbar() {
                 CALL US
               </a>
               <a 
-                href="https://wa.me/919876543210" 
+                href="https://wa.me/0000000000" 
                 className="flex items-center justify-center gap-3 bg-white py-5 rounded-lg border border-black/[0.05] text-[#0B1437] font-headline font-bold text-[11px] uppercase tracking-widest shadow-sm hover:brightness-95 transition-all"
                 onClick={() => setIsMenuOpen(false)}
               >

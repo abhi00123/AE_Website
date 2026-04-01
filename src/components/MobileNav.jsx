@@ -8,7 +8,7 @@ export default function MobileNav() {
         <div className="flex-[5] flex bg-[#0B1437]">
           {/* Call */}
           <a 
-            href="tel:+919876543210" 
+            href="tel:0000000000" 
             className="flex-1 py-4 flex flex-col items-center justify-center gap-1.5 text-white/90 hover:bg-white/5 active:bg-white/10 transition-all border-r border-white/5"
           >
             <span className="material-symbols-outlined text-[22px]">call</span>
@@ -17,7 +17,7 @@ export default function MobileNav() {
 
           {/* WhatsApp */}
           <a 
-            href="https://wa.me/919876543210" 
+            href="https://wa.me/0000000000" 
             className="flex-1 py-4 flex flex-col items-center justify-center gap-1.5 text-[#25D366] hover:bg-white/5 active:bg-white/10 transition-all"
           >
             <span className="material-symbols-outlined text-[22px]" style={{ fontVariationSettings: "'FILL' 1" }}>chat</span>

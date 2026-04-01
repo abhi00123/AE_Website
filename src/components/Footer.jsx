@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#111111] text-[#A1A1A1] pt-24 pb-32 md:pb-12 font-body">
       <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
-        
+
         {/* Column 1: Branding */}
         <div className="space-y-8">
           <Link to="/" className="text-[22px] font-bold font-headline text-brand-gold uppercase tracking-tight block">
@@ -22,7 +22,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        
+
         {/* Column 2: Services */}
         <div>
           <h4 className="text-brand-gold font-headline font-bold mb-10 text-[13px] uppercase tracking-[0.2em]">Services</h4>
@@ -33,7 +33,7 @@ export default function Footer() {
             <li><Link to="/services" className="hover:text-brand-gold transition-colors block">Stone Cladding</Link></li>
           </ul>
         </div>
-        
+
         {/* Column 3: Quick Links */}
         <div>
           <h4 className="text-brand-gold font-headline font-bold mb-10 text-[13px] uppercase tracking-[0.2em]">Quick Links</h4>
@@ -44,14 +44,14 @@ export default function Footer() {
             <li><Link to="/contact" className="hover:text-brand-gold transition-colors block">Careers</Link></li>
           </ul>
         </div>
-        
+
         {/* Column 4: Contact */}
         <div>
           <h4 className="text-brand-gold font-headline font-bold mb-10 text-[13px] uppercase tracking-[0.2em]">Contact</h4>
           <div className="space-y-6 text-[13px] font-bold text-white/60">
             <p className="flex items-center gap-4">
               <span className="material-symbols-outlined text-brand-gold text-lg">call</span>
-              +91 98765 43210
+              +91 00000 00000
             </p>
             <p className="flex items-center gap-4">
               <span className="material-symbols-outlined text-brand-gold text-lg">mail</span>
@@ -64,7 +64,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      
+
       {/* Bottom Legal Bar */}
       <div className="max-w-7xl mx-auto px-8 mt-24 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] text-white/30 uppercase tracking-[0.25em] font-bold">
         <p>© 2024 ABHISHEK ENTERPRISE. MASTER MASONRY & PRECISION TILING.</p>

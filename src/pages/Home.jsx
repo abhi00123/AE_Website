@@ -23,7 +23,7 @@ export default function Home() {
               <Link to="/contact" className="bg-brand-gold text-brand-navy px-10 py-5 rounded-lg font-headline font-extrabold text-xs uppercase tracking-widest hover:scale-105 transition-all shadow-xl pt-6">
                 Get Free Estimate
               </Link>
-              <a href="tel:+919876543210" className="border-2 border-white text-white px-10 py-5 rounded-lg font-headline font-extrabold text-xs uppercase tracking-widest hover:bg-white hover:text-brand-navy transition-all text-center pt-6">
+              <a href="tel:0000000000" className="border-2 border-white text-white px-10 py-5 rounded-lg font-headline font-extrabold text-xs uppercase tracking-widest hover:bg-white hover:text-brand-navy transition-all text-center pt-6">
                 Call Now
               </a>
             </div>
@@ -301,10 +301,10 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex flex-wrap gap-4">
-                  <a className="bg-[#25D366] text-white px-8 py-5 rounded-md font-headline font-extrabold text-xs uppercase tracking-widest flex items-center gap-3 hover:opacity-90 transition-all flex-1 justify-center pt-6 shadow-xl" href="https://wa.me/919876543210">
+                  <a className="bg-[#25D366] text-white px-8 py-5 rounded-md font-headline font-extrabold text-xs uppercase tracking-widest flex items-center gap-3 hover:opacity-90 transition-all flex-1 justify-center pt-6 shadow-xl" href="https://wa.me/0000000000">
                     <span className="material-symbols-outlined text-lg">chat</span> WhatsApp Now
                   </a>
-                  <a className="bg-white/10 text-white px-8 py-5 rounded-md font-headline font-extrabold text-xs uppercase tracking-widest flex items-center gap-3 hover:bg-white/20 transition-all flex-1 justify-center pt-6 border border-white/10 shadow-xl" href="tel:+919876543210">
+                  <a className="bg-white/10 text-white px-8 py-5 rounded-md font-headline font-extrabold text-xs uppercase tracking-widest flex items-center gap-3 hover:bg-white/20 transition-all flex-1 justify-center pt-6 border border-white/10 shadow-xl" href="tel:0000000000">
                     <span className="material-symbols-outlined text-lg">call</span> Call Office
                   </a>
                 </div>

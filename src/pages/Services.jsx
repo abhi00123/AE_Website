@@ -74,7 +74,7 @@ export default function Services() {
               <Link to="/contact" className="bg-brand-gold text-white px-8 py-4 font-headline font-bold tracking-tight hover:brightness-110 transition-all rounded uppercase text-sm tracking-widest">
                 Get Free Estimate
               </Link>
-              <a href="tel:+919876543210" className="border border-white text-white px-8 py-4 font-headline font-bold tracking-tight hover:bg-white hover:text-brand-navy transition-all rounded uppercase text-sm tracking-widest">
+              <a href="tel:0000000000" className="border border-white text-white px-8 py-4 font-headline font-bold tracking-tight hover:bg-white hover:text-brand-navy transition-all rounded uppercase text-sm tracking-widest">
                 Call Now
               </a>
             </div>
@@ -197,8 +197,8 @@ export default function Services() {
             <Link to="/contact" className="bg-brand-gold text-white px-10 py-4 font-headline font-bold tracking-tight hover:brightness-110 transition-all rounded shadow-lg uppercase text-sm">
               Get Free Estimate
             </Link>
-            <a href="tel:+919876543210" className="border border-white/30 text-white px-10 py-4 font-headline font-bold tracking-tight hover:bg-white hover:text-brand-navy transition-all rounded uppercase text-sm text-center">
-              Call: +91 98765 43210
+            <a href="tel:0000000000" className="border border-white/30 text-white px-10 py-4 font-headline font-bold tracking-tight hover:bg-white hover:text-brand-navy transition-all rounded uppercase text-sm text-center">
+              Call: 0000000000
             </a>
           </div>
         </div>
